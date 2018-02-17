@@ -3712,9 +3712,9 @@ gatsby-plugin-react-next@^1.0.9:
     react "^16.0.0"
     react-dom "^16.0.0"
 
-gatsby-plugin-sharp@^1.6.28:
-  version "1.6.28"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-1.6.28.tgz#4f485f4be15d2e64a7876455aea1fc9ed80b05a7"
+gatsby-plugin-sharp@^1.6.28, gatsby-plugin-sharp@^1.6.29:
+  version "1.6.29"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-1.6.29.tgz#6e1df0ea3ac165decd579e574b8e53e49b6c787f"
   dependencies:
     async "^2.1.2"
     babel-runtime "^6.26.0"
@@ -3757,12 +3757,12 @@ gatsby-remark-copy-linked-files@^1.5.27:
     unist-util-visit "^1.1.1"
 
 gatsby-remark-images@^1.5.44:
-  version "1.5.44"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-1.5.44.tgz#19c0cdbb8fbe49c2b3f3e76d02994af8bb57d586"
+  version "1.5.45"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-1.5.45.tgz#d6b90b1134c7fada5ae4a39efe6c26f33f0c0e13"
   dependencies:
     babel-runtime "^6.26.0"
     cheerio "^1.0.0-rc.2"
-    gatsby-plugin-sharp "^1.6.28"
+    gatsby-plugin-sharp "^1.6.29"
     is-relative-url "^2.0.0"
     lodash "^4.17.4"
     slash "^1.0.0"
@@ -3788,8 +3788,8 @@ gatsby-remark-smartypants@^1.4.11:
     unist-util-visit "^1.1.1"
 
 gatsby-source-filesystem@^1.5.19:
-  version "1.5.19"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.5.19.tgz#bce5596d525f2098624a0c99c27d956fcb753c3d"
+  version "1.5.20"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.5.20.tgz#5f5bc8989497795adee7302451174ef5eaf6086d"
   dependencies:
     babel-cli "^6.26.0"
     babel-runtime "^6.26.0"
@@ -3838,8 +3838,8 @@ gatsby-transformer-sharp@^1.6.19:
     image-size "^0.6.0"
 
 gatsby@^1.9.194:
-  version "1.9.200"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.200.tgz#c7c55a0012f56c44aa292327b0731b8566424e2e"
+  version "1.9.201"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.201.tgz#792ed6dfd8e75ad89bb6c8e1fe262b493f88eb7d"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -4622,9 +4622,13 @@ hoist-non-react-statics@^1.0.3, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
-hoist-non-react-statics@^2.1.0, hoist-non-react-statics@^2.3.0:
+hoist-non-react-statics@^2.1.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.3.1.tgz#343db84c6018c650778898240135a1420ee22ce0"
+
+hoist-non-react-statics@^2.3.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.0.tgz#d2ca2dfc19c5a91c5a6615ce8e564ef0347e2a40"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -6297,7 +6301,7 @@ mime-types@2.1.17:
   dependencies:
     mime-db "~1.30.0"
 
-mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.15, mime-types@~2.1.16, mime-types@~2.1.17, mime-types@~2.1.7:
+mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.16, mime-types@~2.1.17, mime-types@~2.1.18, mime-types@~2.1.7:
   version "2.1.18"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.18.tgz#6f323f60a83d11146f831ff11fd66e2fe5503bb8"
   dependencies:
@@ -10231,11 +10235,11 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
 
 type-is@~1.6.15:
-  version "1.6.15"
-  resolved "https://registry.yarnpkg.com/type-is/-/type-is-1.6.15.tgz#cab10fb4909e441c82842eafe1ad646c81804410"
+  version "1.6.16"
+  resolved "https://registry.yarnpkg.com/type-is/-/type-is-1.6.16.tgz#f89ce341541c672b25ee7ae3c73dee3b2be50194"
   dependencies:
     media-typer "0.3.0"
-    mime-types "~2.1.15"
+    mime-types "~2.1.18"
 
 type-of@^2.0.1:
   version "2.0.1"

@@ -8,7 +8,6 @@ backend:
   repo: huntercaron/boiled
 
 media_folder: src/content/assets
-public_folder: assets
 
 # CMS File Structures
 collections:

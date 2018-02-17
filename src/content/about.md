@@ -12,7 +12,6 @@ description: >
 
   This information isn't actually inserted in the page, you can add it similar
   to how we added the list in the template file.
-image: images/mohr_aaron.jpg
 exampleList:
   - text: list item one
   - text: list item two

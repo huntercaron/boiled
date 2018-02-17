@@ -3,7 +3,7 @@ templateKey: about-page
 path: /about
 title: About Dynamic Pages
 subtitle: 'This is front the subtitle field, inserted in the template'
-image: /assets/img_2418.jpg
+image: /assets/sloth.jpg
 description: >
   Sometimes pages have little bits of text rather than a main body section for
   weirder layouts. Formatting text in frontmatter like this allows you to have

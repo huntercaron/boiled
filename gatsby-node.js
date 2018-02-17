@@ -19,10 +19,6 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
           path.dirname("."),
           path.join(__dirname, image)
         )
-
-        if (!fs.existsSync(staticImagePath)){
-          fs.mkdirSync(staticImagePath);
-        }
       }
     }
   }

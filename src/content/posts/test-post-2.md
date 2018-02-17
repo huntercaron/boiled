@@ -10,6 +10,4 @@ Here's another sloth.
 
 
 
-![](/assets/email page.jpeg)
-
 ![](/assets/sloth2.png)

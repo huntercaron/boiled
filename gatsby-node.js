@@ -9,11 +9,12 @@ const staticImagePath = "./static/assets/";
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 
   const { frontmatter } = node
-  
+
   if (frontmatter) {
     const { image } = frontmatter
     if (image) {
       if (image.indexOf('/assets') === 0) {
+        console.log("HEY");
         frontmatter.image = path.relative(
           path.dirname(node.fileAbsolutePath),
           path.join(__dirname, '/static/assets/', image)
@@ -22,35 +23,16 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     }
   }
 
-  if ((node.internal.mediaType == "image/png" || node.internal.mediaType === `image/jpeg`) && process.env.NODE_ENV === 'production') {
+if ((node.internal.mediaType == "image/png" || node.internal.mediaType === `image/jpeg`) && process.env.NODE_ENV === 'production') {
+  // if ((node.internal.mediaType == "image/png" || node.internal.mediaType === `image/jpeg`)) {
     if (!fs.existsSync(staticImagePath)){
       fs.mkdirSync(staticImagePath);
     }
+
+    console.log("HEY");
     fs.createReadStream("./src/content/" + node.relativePath).pipe(fs.createWriteStream(staticImagePath + node.base));
   }
 }
-
-
-exports.onCreateNode = ({
-  node,
-  getNode,
-  loadNodeContent,
-  boundActionCreators,
-}) => {
-  const { frontmatter } = node
-  if (frontmatter) {
-    const { image } = frontmatter
-    if (image) {
-      if (image.indexOf('/img') === 0) {
-        frontmatter.image = path.relative(
-          path.dirname(node.fileAbsolutePath),
-          path.join(__dirname, '/static/', image)
-        )
-      }
-    }
-  }
-}
-
 
 
 exports.createPages = ({ boundActionCreators, graphql }) => {

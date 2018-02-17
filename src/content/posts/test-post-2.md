@@ -8,6 +8,6 @@ Posts are automatically created at the path defined above in the frontmatter. Th
 
 Here's another sloth.
 
-![](/src/content/assets/img_2424.jpg)
+![sabanull](/src/content/assets/img_2424.jpg)
 
 ![null](/assets/sloth2.png)

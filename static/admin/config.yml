@@ -8,6 +8,7 @@ backend:
   repo: huntercaron/boiled
 
 media_folder: src/content/assets
+public_folder: assets
 
 # CMS File Structures
 collections:
@@ -32,6 +33,7 @@ collections:
           - { name: path, label: Path }
           - { name: title, label: Title }
           - { name: subtitle, label: Subtitle }
+          - { name: image, label: Image, widget: image }
           - { name: description, label: Description, widget: text }
           - { name: body, label: Body, widget: markdown }
           - label: Example List

@@ -3,6 +3,7 @@ templateKey: post
 path: /test-post
 date: 2017-12-13T05:00:00.000Z
 title: Test Post
+image: /assets/sloth2.png
 ---
 ## This is a test post.
 

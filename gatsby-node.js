@@ -15,9 +15,32 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const { image } = frontmatter
     if (image) {
       if (image.indexOf('/assets') === 0) {
+        // console.log("SHITHEAD");
+        // console.log(path.parse(node.fileAbsolutePath));
+        let src = path.relative(__dirname, node.fileAbsolutePath);
+        // console.log(src);
+        // console.log(path.relative(frontmatter.image, src));
+
+        let content = path.relative(contentPath, src);
+        console.log();
+        // console.log(content);
+        // console.log(frontmatter.image);
+
+        console.log();
+        // console.log(path.relative(content, frontmatter.image));
+        //
+        // console.log(path.relative(path.join(contentPath, '/assets/'), path.dirname(content) ));
+
+        console.log(path.dirname(node.fileAbsolutePath));
+        console.log(path.join(__dirname, image));
+
+
+        // path.dirname(node.fileAbsolutePath),
+        // path.join(__dirname, '/static/assets/', image)
+
         frontmatter.image = path.relative(
-          path.dirname("."),
-          path.join(__dirname, image)
+          path.dirname(node.fileAbsolutePath),
+          path.join(__dirname, contentPath, image)
         )
       }
     }

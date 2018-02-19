@@ -14,7 +14,6 @@ const Subtitle = styled.div`
 `
 
 const List = styled.ul`
-  list-style:
 `
 
 const LinkContainer = styled.li`

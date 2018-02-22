@@ -36,7 +36,7 @@ const Container = styled.div`
 `
 
 const InnerContainer = styled.div`
-  height: 100%:
+  height: 100%;
 `
 
 const TitleLink = styled(Link)`

@@ -10,6 +10,11 @@ const contentPath = "./src/content/";
 const imageNames = ["thumbnail", "image"];
 
 
+/*
+** Most of this stuff is pretty much fixing Netlify CMS absolute path stuff.
+** Gatsby likes relative paths so you have to do a bunch of stuff. 
+** It will hopefully be fixed soon, in the mean time this should work.
+*/
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   // making frontmatter paths relative

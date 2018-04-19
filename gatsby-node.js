@@ -3,22 +3,37 @@
 // */
 const path = require('path');
 const fs = require('fs');
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
 const staticImagePath = "./static/assets/";
 const contentPath = "./src/content/";
+const imageNames = ["thumbnail", "image"];
+
 
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   // making frontmatter paths relative
   const { frontmatter } = node;
+
   if (frontmatter) {
-    const { image } = frontmatter
-    if (image) {
-      if (image.indexOf('/assets') === 0) {
-        frontmatter.image = path.relative(
-          path.dirname(node.fileAbsolutePath),
-          path.join(__dirname, contentPath, image)
-        )
+    const images = [];
+
+    for (let prop in frontmatter) {
+      if (imageNames.indexOf(prop) >= 0) {
+        images.push(prop);
+      }
+    }
+
+    for (let imageName of images) {
+      let image = frontmatter[imageName];
+
+      if (image) {
+        if (image.indexOf('/assets') === 0) {
+          frontmatter[imageName] = path.relative(
+            path.dirname(node.fileAbsolutePath),
+            path.join(__dirname, contentPath, image)
+          )
+        }
       }
     }
   }
@@ -64,3 +79,14 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
    });
  });
 };
+
+
+// if you have some modules that need window defined
+// exports.modifyWebpackConfig = ({ config, stage }) => {
+//   if (stage === "build-html") {
+//     config.loader("null", {
+//       test: /intersection-observer/,
+//       loader: "null-loader",
+//     });
+//   }
+// };

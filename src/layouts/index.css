@@ -20,7 +20,7 @@ body {
   font-weight: 400;
   font-family: 'Haas Grot Text', 'Helvetica', 'Arial', sans-serif;
   color: #222;
-  webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
